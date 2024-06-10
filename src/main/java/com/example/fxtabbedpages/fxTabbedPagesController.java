@@ -45,4 +45,6 @@ public class fxTabbedPagesController {
     @FXML private TextField addressLastUpdateField;
 
     // You can add initialization or event-handling methods here if needed
+
+
 }
