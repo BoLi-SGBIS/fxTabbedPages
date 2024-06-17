@@ -15,6 +15,7 @@ public class fxtabbedpages extends Application {
         primaryStage.setTitle("Sakila Database");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
+
     }
 
     public static void main(String[] args) {

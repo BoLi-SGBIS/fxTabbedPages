@@ -4,8 +4,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.fxtabbedpages.fxTabbedPagesController">
-    <Tab text="Actor">
+<TabPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxtabbedpages.fxTabbedPagesController">
+    <Tab closable="false" text="Actor">
         <GridPane>
             <Label text="Actor ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="actorIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -15,15 +15,19 @@
             <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label text="Last Update:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
             <TextField fx:id="actorLastUpdateField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnNextActor" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="btnPreviousActor" mnemonicParsing="false" onAction="#previous" text="Previous" GridPane.rowIndex="5" />
          <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints />
+             <ColumnConstraints />
+             <ColumnConstraints />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
+             <RowConstraints />
+             <RowConstraints />
+             <RowConstraints />
+             <RowConstraints />
+             <RowConstraints />
+             <RowConstraints />
          </rowConstraints>
          <opaqueInsets>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -32,8 +36,11 @@
             <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
          </padding>
         </GridPane>
+      <graphic>
+
+      </graphic>
     </Tab>
-    <Tab text="Film">
+    <Tab closable="false" text="Film">
         <GridPane>
             <Label text="Film ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="filmIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -57,6 +64,8 @@
             <TextField fx:id="ratingField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
             <Label text="Last Update:" GridPane.columnIndex="0" GridPane.rowIndex="10" />
             <TextField fx:id="filmLastUpdateField" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="btnNextFilm" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <Button fx:id="btnPreviousFilm" mnemonicParsing="false" onAction="#previous" text="Previous" GridPane.rowIndex="12" />
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />
@@ -79,7 +88,7 @@
          </padding>
         </GridPane>
     </Tab>
-    <Tab text="City">
+    <Tab closable="false" text="City">
         <GridPane>
             <Label text="City ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="cityIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -89,6 +98,8 @@
             <TextField fx:id="cityCountryIdField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label text="Last Update:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
             <TextField fx:id="cityLastUpdateField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnNextCity" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <Button fx:id="btnPreviousCity" mnemonicParsing="false" onAction="#previous" text="Previous" GridPane.rowIndex="12" />
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />
@@ -105,7 +116,7 @@
          </padding>
         </GridPane>
     </Tab>
-    <Tab text="Country">
+    <Tab closable="false" text="Country">
         <GridPane>
             <Label text="Country ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="countryIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -113,6 +124,8 @@
             <TextField fx:id="countryField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Last Update:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
             <TextField fx:id="countryLastUpdateField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnNextCountry" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <Button fx:id="btnPreviousCountry" mnemonicParsing="false" onAction="#previous" text="Previous" GridPane.rowIndex="12" />
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />
@@ -127,7 +140,7 @@
          </padding>
         </GridPane>
     </Tab>
-    <Tab text="Address">
+    <Tab closable="false" text="Address">
         <GridPane>
             <Label text="Address ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="addressIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
@@ -145,6 +158,8 @@
             <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Label text="Last Update:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
             <TextField fx:id="addressLastUpdateField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="btnNextAddress" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <Button fx:id="btnPreviousAddress" mnemonicParsing="false" onAction="#previous" text="Previous" GridPane.rowIndex="12" />
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />
